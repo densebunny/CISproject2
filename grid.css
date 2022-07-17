@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+.grid{
+    display:grid;
+    grid-template-columns: 10% 80%;
+    grid-template-rows: 20% 60% 20%;
+    grid-template-areas:
+        "header header"
+        "sidebar stuff"
+        "sidebar stuff"
+        "footer footer";
+    grid-column-gap: 15px;
+}
+
+.header{
+    grid-area:header;
+    background-image: url("logo2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align:center;
+    font-size:30px;
+    color:violet;
+}
+
+.sidebar{
+    grid-area:sidebar;
+}
+
+nav ul{
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    width:110%;
+    background-color:blueviolet;
+    padding:inherit;
+}
+
+nav li a{
+    display:block;
+    color:violet;
+    padding:8px 16px;
+    text-decoration:none;
+    font-size:36px;
+}
+
+nav li a:hover{
+    background-color:fuchsia;
+    color:white;
+}
+
+.stuff{
+    grid-area:stuff;
+    padding-left:2%;
+    padding-bottom:0.2%
+}
+
+img{float:right;}
+
+.footer{
+    grid-area:footer;
+    color:white;
+}
+
+.grid div:nth-child(even){
+    background-color: purple;
+}
+
+.grid div:nth-child(odd){
+    background-color: plum;
+}
+
+body{
+    background-color:mediumpurple;
+    font-family:serif;
+}
