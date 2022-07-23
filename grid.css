@@ -144,7 +144,7 @@ text-decoration: none;}
 a:hover {color:white;}
 
 .grid div:nth-child(even){
-    background-color: purple;
+    background-color: #c038ff;
 }
 
 .grid div:nth-child(odd){
