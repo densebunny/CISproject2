@@ -1,8 +1,6 @@
-*{
-    margin: 0;
-    padding: 0;
-    
-}
+@import "boostrap/scss/functions";
+@import "boostrap/scss/variables";
+@import "boostrap/scss/utilities";
 
 .grid{
     display:grid;
@@ -66,11 +64,6 @@ table, th, td{
 }
 
 table.center{
-    margin-left: auto;
-    margin-right: auto;
-}
-
-table.social{
     margin-left: auto;
     margin-right: auto;
 }
@@ -155,3 +148,58 @@ body{
     background-color:mediumpurple;
     font-family:serif;
 }
+
+/* bootstrap below */
+    "width": (
+      property: width,
+      class: w,
+      values: (
+        25: 25%,
+        50: 50%,
+        75: 75%,
+        100: 100%,
+        auto: auto
+      )
+    ),
+    "max-width": (
+      property: max-width,
+      class: mw,
+      values: (100: 100%)
+    ),
+    "viewport-width": (
+      property: width,
+      class: vw,
+      values: (100: 100vw)
+    ),
+    "min-viewport-width": (
+      property: min-width,
+      class: min-vw,
+      values: (100: 100vw)
+    ),
+    "height": (
+      property: height,
+      class: h,
+      values: (
+        25: 25%,
+        50: 50%,
+        75: 75%,
+        100: 100%,
+        auto: auto
+      )
+    ),
+    "max-height": (
+      property: max-height,
+      class: mh,
+      values: (100: 100%)
+    ),
+    "viewport-height": (
+      property: height,
+      class: vh,
+      values: (100: 100vh)
+    ),
+    "min-viewport-height": (
+      property: min-height,
+      class: min-vh,
+      values: (100: 100vh)
+    ),
+    
