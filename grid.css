@@ -58,14 +58,19 @@ nav li a:hover{
 
 img{float:right;}
 
-table, th, td{
+table.center, th.center, td.center{
     border-style: dotted;
     border-color: darkviolet;
-}
-
-table.center{
     margin-left: auto;
     margin-right: auto;
+}
+
+table.media, th.media, td.media{
+    border: 1px solid plum;
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #ffd7f5;
 }
 
 div.gallery{
@@ -91,11 +96,15 @@ div.desc{
     color:white;
 }
 
+h1 { font-family: 'Anton';
+     display: block;}
+
 h2 {
     display: block;
     font-size: 1.5em;
     color:#d133d4;
     text-align:center;
+    font-family: 'Anton';
 }
 
 h3{
@@ -103,6 +112,7 @@ h3{
     font-size: 2em;
     color:fuchsia;
     text-align:center;
+    font-family: 'Anton';
 }
 
 input[type=text]{
@@ -146,7 +156,7 @@ a:hover {color:white;}
 
 body{
     background-color:mediumpurple;
-    font-family:serif;
+    font-family: 'Archivo Narrow';
 }
 
 /* bootstrap below */
